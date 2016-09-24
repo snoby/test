@@ -1,0 +1,21 @@
+before_install:
+  - echo before install
+
+install:
+  - echo install
+
+before_script:
+  - echo before_script
+
+script:
+  - echo script
+
+after_failure:
+  - echo after failure
+
+after_success:
+  - echo after_success
+
+after_script:
+  - echo after script
+
