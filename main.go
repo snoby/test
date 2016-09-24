@@ -12,6 +12,6 @@ func defaultHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", defaultHandler)
 	fmt.Println("Example app listening at http://localhost:8888")
-	fmt.Println("Temp print")
+	fmt.Println("Temp ")
 	http.ListenAndServe(":8888", nil)
 }
