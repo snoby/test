@@ -1,9 +1,9 @@
 // vi: ft=groovy
 node {
-  // pull the code to the workspace
-  checkout scm
-
-
+  stage('pull code') {
+    // pull the code to the workspace
+    checkout scm
+  }
   stage('prebuild') {
     echo "Running the prebuild stage"
   }
