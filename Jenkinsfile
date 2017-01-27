@@ -1,1 +1,3 @@
-simpleTravisRunner(".travis.yml")
+node {
+  echo "Hello World"
+}
