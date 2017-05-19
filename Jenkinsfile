@@ -3,6 +3,9 @@ node {
   stage('pull code') {
     // pull the code to the workspace
     checkout scm
+     echo "My branch is: ${env.BRANCH_NAME}"
+     sh ' echo in sh: $BRANCH_NAME'
+     echo "The Build num: ${env.BUILD_NUMBER}"
   }
   stage('prebuild') {
     echo "Running the prebuild stage"
